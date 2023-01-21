@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'windowsregular';
+    src: url('../leviwindows/Windows Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    font-family: 'windowsregular';
+}
