@@ -1,4 +1,9 @@
-
+/** 
+Bleu foncé (couleur de fond de la barre des tâches) : #0A246A
+Bleu clair (couleur de fond des fenêtres) : #EBF4FB
+Blanc (couleur des titres de fenêtre et des boutons) : #FEFEFE
+Gris (couleur des bordures et des séparateurs) : #C0C0C0
+**/
 .main{
     height: 100vh;
     width: auto;
@@ -10,6 +15,85 @@
     width: 100vw;
 }
 
+
+
+/* Header pop-up*/
+
 .popup-container {
-    background-color: blue;
+    position: fixed;
+    top: 8%;
+    left: 12%;
+    transform: "translate(-50%, -50%)";
+    z-index: 1;
+    background-color: white;
+    width: 60%;
+    height: 670px;
+    background-color: #c0c0c0;
+    box-shadow: inset 1px 1px #fefefe, 1px 1px #010101;
+}
+
+.popup_header {
+    background-color:  #000080;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: auto;
+}
+
+.intitu_popup_header, .close_popup_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_popup_header {
+    color: #FEFEFE;
+}
+
+.image_popup_header {
+    width: 20%;
+    margin-right: 5px;
+}
+
+.button_popup_header {
+    background-color: #C0C0C0;
+    width: 30px;
+    height: 30px;
+    box-shadow: inset 1px 1px #fefefe, 1px 1px #010101;
+    margin-right: 5px;
+}
+
+.icon_button_popup_header {
+    width: 75%;
+    height: 75%;
+}
+
+
+/* icon design */
+
+.design {
+    top: 25%;
+    position: static;
+}
+
+/*  icons */
+
+.react-modal {
+    position: absolute;
+    z-index: 0;
+    padding: 20px;
+    margin-left: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Content */
+
+.popup-content {
+    margin: 30px;
 }

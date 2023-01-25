@@ -5,6 +5,11 @@ import "./assets/css/Header.css";
 import "./assets/css/Windows.css";
 import"./assets/css/reset.css";
 import "./assets/css/Game.css";
+import "./assets/css/About.css";
+import "./assets/css/Design.css";
+import "./assets/css/Developpement.css";
+import "./assets/css/GetDate.css";
+
 
 const router= createBrowserRouter(
   [

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Game() {
+function Developpement() {
     const [isOpen, setIsOpen] = useState(false);
     const [modalX, setModalX] = useState(0);
     const [modalY, setModalY] = useState(0);
@@ -26,23 +26,21 @@ function Game() {
     const handleMouseUp = () => {
       setIsMouseDown(false);
     };
-
     return (
         <div className='container_icon'>
-        <div className='react-modal' onDoubleClick={() => setIsOpen(true)} >
-            <img className="game-image" src="./Minesweeper.webp" alt="icon"/>
-            <p className="p_game">Mineswipper</p>
+        <div className='react-modal' style={{ top: 240 }}
+        onDoubleClick={() => setIsOpen(true)} >
+
+            <img className="developpement-image" src="./dossier_ouvert.png" alt="icon"/>
+            <p className="p_developpement">Developpement</p>
         </div>
                     {isOpen && (
-                        <div className="modal_game" style={{ left: modalX, top: modalY }} >
-                            <div className="modal-header"                         onMouseDown={handleMouseDown}
+                        <div className="modal_game" style={{ left: modalX, top: modalY }}>
+                            <div className="modal-header" onMouseDown={handleMouseDown}
                         onMouseMove={handleMouseMove}
                         onMouseUp={handleMouseUp}>
-                                <p>Header</p>
+                                <p>Contenu de la modale</p>
                                 <button onClick={() => setIsOpen(false)}>Fermer</button>
-                            </div>
-                            <div className="modal-contenu">
-                                <p>Hello je suis un contenu</p>
                             </div>
                         </div>
                     )}
@@ -50,4 +48,4 @@ function Game() {
     );
 }
 
-export default Game;
+export default Developpement;

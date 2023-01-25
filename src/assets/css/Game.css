@@ -1,19 +1,24 @@
 .modal_game {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 12%;
+    left: 12%;
     transform: "translate(-50%, -50%)";
     z-index: 1;
     background-color: white;
-    padding: 20px;
+    width: 75%;
+    height: 500px;
+    background-color: #c0c0c0;
+    box-shadow: inset 1px 1px #fefefe, 1px 1px #010101;
+}
+.modal-header {
+    background-color: blue;
+}
+.game-image {
+    width: 60px;
 }
 
-/* .game-image {
-    position:absolute;
-    width: 100px;
-} */
-
 .p_game {
-    padding-top: 55px;
-    font-size: 20px;
+    position: absolute;
+    font-size: 16px;
+    top: 85px;
 } 
