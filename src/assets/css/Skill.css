@@ -1,0 +1,11 @@
+.p_skills {
+    position: absolute;
+    font-size: 16px;
+    top: 85px;
+    white-space: nowrap;
+}
+
+.skills-image {
+    width: 60px;
+
+}

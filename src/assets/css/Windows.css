@@ -19,18 +19,6 @@ Gris (couleur des bordures et des séparateurs) : #C0C0C0
 
 /* Header pop-up*/
 
-.popup-container {
-    position: fixed;
-    top: 8%;
-    left: 12%;
-    transform: "translate(-50%, -50%)";
-    z-index: 1;
-    background-color: white;
-    width: 60%;
-    height: 670px;
-    background-color: #c0c0c0;
-    box-shadow: inset 1px 1px #fefefe, 1px 1px #010101;
-}
 
 .popup_header {
     background-color:  #000080;

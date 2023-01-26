@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Projects from "../components/Projects";
+import Projects from "../components/Skills";
 import GetDate from "../components/GetDate";
 // import { Link } from "react-router-dom";
 

@@ -1,18 +1,9 @@
-.picture_body_popup {
-    display: flex;
-    justify-content: center;
+.p_apropos {
+    position: absolute;
+    font-size: 16px;
+    top: 85px;
 }
-    .image_body_popup {
-        max-width:70%
-    }
-    .title-body-content {
-        margin-top: 25px;
-    }
 
-
-.about-me, .about-me-content {
-    margin-top: 20px;
+.about-image {
+    width: 60px;
 }
-    .description-about-me {
-        font-size: 18px;
-    }

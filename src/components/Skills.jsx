@@ -1,19 +1,57 @@
-import React from 'react';
+import { useState } from "react";
 
-const Skills = ({ closePopup }) => {
+function Competences() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [modalX, setModalX] = useState(0);
+    const [modalY, setModalY] = useState(0);
+    const [isMouseDown, setIsMouseDown] = useState(false);
+    const [mouseX, setMouseX] = useState(0);
+    const [mouseY, setMouseY] = useState(0);
+  
+    const handleMouseDown = (event) => {
+      setIsMouseDown(true);
+      setMouseX(event.clientX);
+      setMouseY(event.clientY);
+    };
+  
+    const handleMouseMove = (event) => {
+      if (isMouseDown) {
+        setModalX(modalX + event.clientX - mouseX);
+        setModalY(modalY + event.clientY - mouseY);
+        setMouseX(event.clientX);
+        setMouseY(event.clientY);
+      }
+    };
+  
+    const handleMouseUp = () => {
+      setIsMouseDown(false);
+    };
     return (
         <>
-        <header className='popup_header'>
-            <h2>Compétences</h2>
-            <button onClick={closePopup}>
-                fermer
-            </button>
-        </header>
-        <div className='popup-cntent'>
-            <p>This is the content of A propos</p>
+        <div className='container_icon'>
+            <div className='react-modal' style={{ top: 480 }} onDoubleClick={() => setIsOpen(true)} >
+                <img className="skills-image" src="./competences.png" alt="icon"/>
+                <p className="p_skills">Mes compétences</p>
+            </div>
+            {isOpen && (
+                        <div className="modal_game" style={{ left: modalX, top: modalY }}>
+                            <div className="modal-header" onMouseDown={handleMouseDown}
+                        onMouseMove={handleMouseMove}
+                        onMouseUp={handleMouseUp}>
+                                <p>Contenu de la modale</p>
+                                <button onClick={() => setIsOpen(false)}>Fermer</button>
+                            </div>
+                            <div className="modal-content">
+                                <p>skills</p>
+                            </div>
+                        </div>
+                    )}
         </div>
+        
         </>
     )
 }
 
-export default Skills;
+export default Competences;
+
+

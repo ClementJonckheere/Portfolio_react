@@ -9,7 +9,7 @@ import "./assets/css/About.css";
 import "./assets/css/Design.css";
 import "./assets/css/Developpement.css";
 import "./assets/css/GetDate.css";
-
+import "./assets/css/Skill.css";
 
 const router= createBrowserRouter(
   [

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Board from "./Board";
 
 function Game() {
     const [isOpen, setIsOpen] = useState(false);
@@ -41,10 +42,10 @@ function Game() {
                                 <p>Header</p>
                                 <button onClick={() => setIsOpen(false)}>Fermer</button>
                             </div>
-                            <div className="modal-contenu">
-                                <p>Hello je suis un contenu</p>
-                            </div>
-                        </div>
+                            <div className="modal-content">
+                            <Board />
+                              </div>
+                          </div>
                     )}
     </div>
     );
