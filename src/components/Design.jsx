@@ -28,19 +28,24 @@ function Design() {
     };
     return (
         <div className='container_icon'>
-        <div className='react-modal' style={{ top: 120 }} onDoubleClick={() => setIsOpen(true)} >
+        <div className='react-modal' style={{ top: 300 }} onDoubleClick={() => setIsOpen(true)} >
             <img className="design-image" src="./dossier_ouvert.png" alt="icon"/>
-            <p className="p_design">Design</p>
+            <p className="p_design">Projets Design</p>
         </div>
                     {isOpen && (
                         <div className="modal_game" style={{ left: modalX, top: modalY }}>
-                            <div className="modal-header" onMouseDown={handleMouseDown}
-                        onMouseMove={handleMouseMove}
-                        onMouseUp={handleMouseUp}>
-                                <p>Contenu de la modale</p>
-                                <button onClick={() => setIsOpen(false)}>Fermer</button>
-                            </div>
+                        <div className="modal-header" onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}>
+                          <div className="windows-name">
+                            <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
+                          Mes compétences
+                          </div>
+                            <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                         </div>
+                        <div className="modal-content">
+                        </div>
+                    </div>
                     )}
     </div>
     );

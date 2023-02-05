@@ -12,8 +12,8 @@ const Windows = () => {
     <>
       <main className="windows">
       {/* <DragDropContext backend={HTML5Backend}> */}
-      <div className="game">
-        <Game />
+      <div className="about-me">
+        <About />
         </div>
         <div className="design">
         <Design />
@@ -21,11 +21,12 @@ const Windows = () => {
         <div className="developpement">
         <Developpement />
         </div>
-        <div className="about-me">
-        <About />
-        </div>
+
         <div className="project">
           <Competences />
+        </div>
+        <div className="game">
+        <Game />
         </div>
       <Header />
       {/* </DragDropContext> */}

@@ -6,6 +6,7 @@
     background-color: #c0c0c0;
     display: flex;
     flex-direction: row;
+    height: 35px;
 }
 
 
@@ -33,9 +34,19 @@
     font-size: 16px;
     width: 85px;
     margin-left: 5px;
-    
+    box-shadow: 1.5px 1.5px #000;
+    border-top: 1.5px solid #fafafa;
+    border-left: 1.5px solid #fafafa;
+    border-bottom: 1.5px solid #5a5a5a;
+    border-right: 1.5px solid #5a5a5a;
+    background: silver;
+    font-weight: bold;
 }
-
+.icon-home {
+    height: 15px;
+    margin-left: 8px;
+    margin-right: 5px;
+}
 .liens-navigation {
     display: flex;
     align-items: center;
@@ -69,7 +80,7 @@
   .menu-bar {
     z-index: 9999;
     position: absolute;
-    bottom: 43px;
+    bottom: 37px;
     left: 0px;
     width: 165px;
     height: 180px;

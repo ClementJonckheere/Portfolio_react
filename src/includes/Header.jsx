@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Projects from "../components/Skills";
+// import About from "../components/About";
+// import Skills from "../components/Skills";
+// import Projects from "../components/Skills";
 import GetDate from "../components/GetDate";
 // import { Link } from "react-router-dom";
 
 export default function Header() {
-    const[isPopupOpen, setIsPopupOpen] = useState(false);
-    const[popupContent, setPopupContent] = useState(null);
+    // const[isPopupOpen, setIsPopupOpen] = useState(false);
+    // const[popupContent, setPopupContent] = useState(null);
     const[startMenuOpen, setstartMenuOpen] = useState(false);
     
     // const[programsMenuOpen, setProgramsMenuOpen] = useState(false);
@@ -17,10 +17,10 @@ export default function Header() {
       setstartMenuOpen(!startMenuOpen);
     }
 
-    const handleIconClick = (content) => {
-        setIsPopupOpen(true);
-        setPopupContent(content);
-    }
+    // const handleIconClick = (content) => {
+    //     setIsPopupOpen(true);
+    //     setPopupContent(content);
+    // }
 
     return(
         <>  
@@ -57,7 +57,7 @@ export default function Header() {
                             <img src="./gmail.png" class="social-image" alt="gmail"/>
                             <div className="social-text">
                               <u className="u" >G</u>
-                              amail
+                              mail
                             </div>
                           </div>
                           </a>
@@ -76,11 +76,13 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="navigations">
-
-                    <button className="liens-navigation-home" id="home-navigation" onClick={toggleStartMenu}><img src="./windows.png" alt="test"></img>Home</button>
+                    <button className="liens-navigation-home" id="home-navigation" onClick={toggleStartMenu}>
+                      <img src="./windows.png" alt="test" className="icon-home"></img>
+                      Home
+                    </button>
                   </div>
 
-                  <div className="navigations">
+                  {/* <div className="navigations">
                     <div className="icon" onClick={() => handleIconClick(<About closePopup={() => setIsPopupOpen(false)} />)}>
                     <p className="liens-navigation"><img className="image_navigation" src="a_propos.png" alt="test"></img> A propos</p>
                     </div>
@@ -96,17 +98,17 @@ export default function Header() {
                     <div className="icon" onClick={() => handleIconClick(<Projects closePopup={() => setIsPopupOpen(false)} />)}>
                     <p className="liens-navigation"><img className="image_navigation" src="" alt="test"></img> Projets </p>
                     </div>
-                  </div>
+                  </div> */}
                 </nav>
                 <GetDate />
             </header>
-        {isPopupOpen && (
+        {/* {isPopupOpen && (
           <div className="popup-container">
             <div className="popup">
               {popupContent}
             </div>
           </div>
-        )}
+        )} */}
       </div>
           </>
       )

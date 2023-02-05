@@ -1,9 +1,14 @@
 .p_design {
     position: absolute;
-    font-size: 16px;
-    top: 85px;
+    font-size: 14px;
+    top: 65px;
+    color: #fefefe;
 }
 
 .design-image {
-    width: 60px;
+    width: 40px;
+}
+
+.modal-content {
+    margin: 10px;
 }

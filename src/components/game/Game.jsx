@@ -30,18 +30,21 @@ function Game() {
 
     return (
         <div className='container_icon'>
-        <div className='react-modal' onDoubleClick={() => setIsOpen(true)} >
+        <div className='react-modal' onDoubleClick={() => setIsOpen(true)} style={{ top: 400 }}>
             <img className="game-image" src="./Minesweeper.webp" alt="icon"/>
-            <p className="p_game">Mineswipper</p>
+            <p className="p_game">Démineur</p>
         </div>
                     {isOpen && (
-                        <div className="modal_game" style={{ left: modalX, top: modalY }} >
-                            <div className="modal-header"                         onMouseDown={handleMouseDown}
-                        onMouseMove={handleMouseMove}
-                        onMouseUp={handleMouseUp}>
-                                <p>Header</p>
-                                <button onClick={() => setIsOpen(false)}>Fermer</button>
-                            </div>
+                        <div className="modal_game" style={{ left: modalX, top: modalY }}>
+                        <div className="modal-header" onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}>
+                          <div className="windows-name">
+                            <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
+                          Mes compétences
+                          </div>
+                            <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
+                        </div>
                             <div className="modal-content">
                             <Board />
                               </div>

@@ -1,11 +1,37 @@
 .p_skills {
     position: absolute;
-    font-size: 16px;
-    top: 85px;
+    font-size: 14px;
+    top: 65px;
     white-space: nowrap;
+    color: #fefefe;
 }
 
 .skills-image {
-    width: 60px;
+    width: 40px;
+}
 
+.container-competences {
+    display: flex;
+}
+
+.domaines-competences {
+    width: 55%;
+    margin-right: 20px;
+}
+
+.icons-block {
+    display: flex;
+    width: 100%;
+}
+
+.icon-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-right: 8px;
+}
+
+.icon-language {
+    width: 25px;
 }

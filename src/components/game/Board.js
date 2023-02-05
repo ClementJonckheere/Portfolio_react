@@ -55,7 +55,7 @@ function Board() {
     return (
         <div className="parent">
             <div style={{color:"white",textAlign:"center",fontSize:"35px"}}>Non-Mines : {nonMinecount}</div>
-            <div>
+            <div className="board-game">
                 
                 {grid.map((singlerow,index1)=>{
                     return (

@@ -14,11 +14,19 @@
     background-color: blue;
 }
 .game-image {
-    width: 60px;
+    width: 40px;
 }
 
 .p_game {
     position: absolute;
-    font-size: 16px;
-    top: 85px;
+    font-size: 14px;
+    top: 65px;
+    color: #fefefe;
 } 
+
+.board-game {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
