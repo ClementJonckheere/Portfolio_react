@@ -1,4 +1,7 @@
 import { useState } from "react";
+import CV from "./CV";
+import InfoGen from "./InfoGen";
+import Objectif from "./Objectif";
 
 function About() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,6 +10,7 @@ function About() {
     const [isMouseDown, setIsMouseDown] = useState(false);
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
+    const [selectedOption, setSelectedOption] = useState("InfoGen");
   
     const handleMouseDown = (event) => {
       setIsMouseDown(true);
@@ -39,15 +43,24 @@ function About() {
                   onMouseMove={handleMouseMove}
                   onMouseUp={handleMouseUp}>
                   <div className="windows-name">
-                    <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
-                      Mes compétences
+                    <img className="icon-modal-windows" src="./about.png" alt="icon page a propos de moi"></img>
+                      A propos
                     </div>
                     <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                   </div>
                   <div className="modal-content">
-                    <p>skills</p>
+                    <div className="router-modale-about">
+                    <button className="btn-modal-about" onClick={() => setSelectedOption("InfoGen")}>Info generale</button>
+                      <button className="btn-modal-about" onClick={() => setSelectedOption("Objectif")}>Mes objectifs</button>
+                      <button className="btn-modal-about" onClick={() => setSelectedOption("CV")}>Mon CV</button>
+                    </div>
+                      <div className="info-generale-about"> 
+                        {selectedOption === "InfoGen" && <InfoGen />}
+                        {selectedOption === "Objectif" && <Objectif />}
+                        {selectedOption === "CV" && <CV />}
+                    </div>
                   </div>
-                </div>
+                  </div>
               )}
         </div>
         </>

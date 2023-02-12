@@ -1,26 +1,13 @@
 import React from "react";
 import { useState } from "react";
-// import About from "../components/About";
-// import Skills from "../components/Skills";
-// import Projects from "../components/Skills";
 import GetDate from "../components/GetDate";
-// import { Link } from "react-router-dom";
 
 export default function Header() {
-    // const[isPopupOpen, setIsPopupOpen] = useState(false);
-    // const[popupContent, setPopupContent] = useState(null);
-    const[startMenuOpen, setstartMenuOpen] = useState(false);
-    
-    // const[programsMenuOpen, setProgramsMenuOpen] = useState(false);
+    const[startMenuOpen, setstartMenuOpen] = useState(false);  
 
     function toggleStartMenu() {
       setstartMenuOpen(!startMenuOpen);
     }
-
-    // const handleIconClick = (content) => {
-    //     setIsPopupOpen(true);
-    //     setPopupContent(content);
-    // }
 
     return(
         <>  
@@ -81,35 +68,10 @@ export default function Header() {
                       Home
                     </button>
                   </div>
-
-                  {/* <div className="navigations">
-                    <div className="icon" onClick={() => handleIconClick(<About closePopup={() => setIsPopupOpen(false)} />)}>
-                    <p className="liens-navigation"><img className="image_navigation" src="a_propos.png" alt="test"></img> A propos</p>
-                    </div>
-                  </div>
-
-                  <div className="navigations">
-                    <div className="icon" onClick={() => handleIconClick(<Skills closePopup={() => setIsPopupOpen(false)} />)}>
-                    <p className="liens-navigation"> <img className="image_navigation" src="./competences.png" alt="test"></img>Compétences</p>
-                    </div>
-                  </div>
-
-                  <div className="navigations">
-                    <div className="icon" onClick={() => handleIconClick(<Projects closePopup={() => setIsPopupOpen(false)} />)}>
-                    <p className="liens-navigation"><img className="image_navigation" src="" alt="test"></img> Projets </p>
-                    </div>
-                  </div> */}
                 </nav>
-                <GetDate />
-            </header>
-        {/* {isPopupOpen && (
-          <div className="popup-container">
-            <div className="popup">
-              {popupContent}
-            </div>
-          </div>
-        )} */}
+            <GetDate />
+          </header>
       </div>
-          </>
-      )
-  }
+    </>
+  )
+}

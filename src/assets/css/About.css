@@ -8,3 +8,37 @@
 .about-image {
     width: 40px;
 }
+
+.block-info-generale {
+    display: flex;
+    width: 100%;
+}
+    .photo-about {
+        width: 160%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .picture-about {
+        width: 100%;
+    }
+
+.router-modale-about {
+    width: 100%;
+    background-color:#898989;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+    .btn-modal-about {
+        width: 100px;
+        height: 30px;
+        box-shadow: 1.5px 1.5px #000;
+        border-top: 1.5px solid #fafafa;
+        border-left: 1.5px solid #fafafa;
+        border-bottom: 1.5px solid #5a5a5a;
+        border-right: 1.5px solid #5a5a5a;
+        background: silver;
+        margin-left: 5px;
+    }

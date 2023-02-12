@@ -10,6 +10,8 @@ import "./assets/css/Design.css";
 import "./assets/css/Developpement.css";
 import "./assets/css/GetDate.css";
 import "./assets/css/Skill.css";
+import "./assets/css/AboutSections/InfoGen.css";
+import "./assets/css/AboutSections/CV.css";
 
 const router= createBrowserRouter(
   [

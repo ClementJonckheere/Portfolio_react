@@ -19,8 +19,20 @@ Gris (couleur des bordures et des séparateurs) : #C0C0C0
 
 /* Header pop-up*/
 .modal_game {
+    position: fixed;
+    top: 12%;
+    left: 12%;
+    transform: "translate(-50%, -50%)";
+    z-index: 1;
+    background-color: white;
+    width: 65%;
+    height: 700px;
+    background-color: #c0c0c0;
+    box-shadow: inset 1px 1px #fefefe, 1px 1px #010101;
     border: 3px solid #C0C0C0;
 }
+
+
 .close-button {
     background: #c3c3c3;
     border-top: 1px solid #fafafa;
@@ -38,6 +50,7 @@ Gris (couleur des bordures et des séparateurs) : #C0C0C0
     margin-right: 3px;
 }
 .modal-header{
+    background-color: #00007c;
     display: flex;
     width: auto;
     align-items: center;
@@ -62,11 +75,6 @@ Gris (couleur des bordures et des séparateurs) : #C0C0C0
     width: 15%;
     margin-right: 10px;
 }
-/* .intitu_popup_header, .close_popup_header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 
 .image_popup_header {
@@ -86,6 +94,10 @@ Gris (couleur des bordures et des séparateurs) : #C0C0C0
     height: 75%;
 }
 
+.modal-content {
+    height: calc(100% - 30px); 
+    overflow-y: scroll;
+  }
 
 /* icon design */
 

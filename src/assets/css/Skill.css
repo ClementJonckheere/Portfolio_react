@@ -9,10 +9,22 @@
 .skills-image {
     width: 40px;
 }
+    .title-competences {
+        height: 50px;
+    }
+    .domaines-block {
+        height: 70px;
+    }
 
 .container-competences {
     display: flex;
 }
+    .competences-dev {
+        height: 40%;
+    }
+    .title-comptences-dev, .title-comptences-design {
+        height: 50px;
+    }
 
 .domaines-competences {
     width: 55%;
@@ -23,14 +35,13 @@
     display: flex;
     width: 100%;
 }
-
-.icon-element {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    padding-right: 8px;
-}
+    .icon-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        padding-right: 15px;
+    }
 
 .icon-language {
     width: 25px;

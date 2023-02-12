@@ -82,7 +82,9 @@ function Competences() {
 
                                 <section className="competences">
                                   <div className="competences-dev">
-                                    <h2>Competences en developpement :</h2>
+                                    <div className="title-comptences-dev">
+                                      <h2>Competences en developpement :</h2>
+                                    </div>
                                     <div className="icon-dev">
                                       <div className="icons-block">
                                         <div className="icon-element">
@@ -95,57 +97,63 @@ function Competences() {
                                         </div>
                                         <div className="icon-element">
                                           JavaScript
-                                        <img className="icon-language" src="./icons-javascript.png" alt="icon css" />
+                                        <img className="icon-language" src="./icons-javascript.png" alt="icon javaScript" />
                                         </div>
                                       </div>
                                       <div className="icons-block">
                                         <div className="icon-element">
                                             PHP
-                                          <img className="icon-language" src="./icons-php.png" alt="icon html" />
+                                          <img className="icon-language" src="./icons-php.png" alt="icon php" />
                                         </div>
                                         <div className="icon-element">
                                             MYSQL
-                                          <img className="icon-language" src="./icons-mysql.png" alt="icon html" />
+                                          <img className="icon-language" src="./icons-mysql.png" alt="icon mysql" />
                                         </div>
                                         <div className="icon-element">
                                             SYMFONY
-                                          <img className="icon-language" src="./icons-symfony.png" alt="icon html" />
+                                          <img className="icon-language" src="./icons-symfony.png" alt="icon symfony" />
                                         </div>
                                       </div>
                                       <div className="icons-block">
                                       <div className="icon-element">
                                               REACTJS
-                                          <img className="icon-language" src="./icons-react.png" alt="icon html" />
+                                          <img className="icon-language" src="./icons-react.png" alt="icon reactjs" />
                                         </div>
                                         <div className="icon-element">
                                               VUEJS
-                                          <img className="icon-language" src="./icons-vuejs.png" alt="icon html" />
+                                          <img className="icon-language" src="./icons-vuejs.png" alt="icon vuejs" />
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                   <div className="competences-design">
-                                  <h2>Competences en design :</h2>
-                                  <div className="icons-block">
-                                      <div className="icon-element">
-                                              AdobeXd
-                                          <img className="icon-language" src="./icons-adobe-xd.png" alt="icon html" />
-                                        </div>
-                                      <div className="icon-element">
-                                              Photoshop
-                                        <img className="icon-language" src="./icons-adobe-photoshop.png" alt="icon html" />
-                                        </div>
-                                      <div className="icon-element">
-                                              Illustrator
-                                        <img className="icon-language" src="./icons-adobe-illustrator.png" alt="icon html" />
-                                      </div>
+                                    <div className="title-comptences-design">
+                                      <h2>Competences en design :</h2>
                                     </div>
-                                    <div className="icons-block">
-                                    <div className="icon-element">
-                                              Blender
-                                        <img className="icon-language" src="./icons-blender.png" alt="icon html" />
-                                      </div>
-                                    </div>
+                                      <div className="icons-block">
+                                          <div className="icon-element">
+                                                  AdobeXd
+                                              <img className="icon-language" src="./icons-adobe-xd.png" alt="icon adobeXd" />
+                                            </div>
+                                          <div className="icon-element">
+                                                  Photoshop
+                                            <img className="icon-language" src="./icons-adobe-photoshop.png" alt="icon photoshop" />
+                                            </div>
+                                          <div className="icon-element">
+                                                  Illustrator
+                                            <img className="icon-language" src="./icons-adobe-illustrator.png" alt="icon illustrator" />
+                                          </div>
+                                        </div>
+                                        <div className="icons-block">
+                                        <div className="icon-element">
+                                                  Blender
+                                            <img className="icon-language" src="./icons-blender.png" alt="icon blender" />
+                                          </div>
+                                          <div className="icon-element">
+                                                  Indesign
+                                            <img className="icon-language" src="./icons-adobe-indesign.png" alt="icon html" />
+                                          </div>
+                                        </div>
                                   </div>
                                 </section>
                               </div>

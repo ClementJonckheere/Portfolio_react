@@ -1,0 +1,33 @@
+.main-info-generale {
+    padding: 20px;
+}
+.block-info-generale {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: none;
+}
+
+.picture-info-general {
+    width: 70%;
+
+}
+    .profil-info-general {
+        width: 100%;
+    }
+
+.sous-title-info-general {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+    .sous-title-info-general .ui-ux {
+        padding-left: 20px;
+    }
+
+.content-info-general {
+    padding-top: 20px;
+}
