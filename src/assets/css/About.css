@@ -25,7 +25,6 @@
 
 .router-modale-about {
     width: 100%;
-    background-color:#898989;
     height: 40px;
     display: flex;
     align-items: center;
@@ -34,11 +33,36 @@
     .btn-modal-about {
         width: 100px;
         height: 30px;
+        vertical-align: middle;
         box-shadow: 1.5px 1.5px #000;
         border-top: 1.5px solid #fafafa;
         border-left: 1.5px solid #fafafa;
         border-bottom: 1.5px solid #5a5a5a;
         border-right: 1.5px solid #5a5a5a;
         background: silver;
+        background: silver;
         margin-left: 5px;
     }
+    .info-bar {
+        border: 1px solid #fff;
+        outline: 1px solid #7b7d7b;
+        font-size: 12px;
+        padding: 4px 4px 4px 4px;
+    }
+
+    .btn-modal-about {
+        background-color: #bdbebd; /* Couleur de fond du bouton */
+        border: none; /* Supprimer la bordure du bouton */
+      }
+      
+      .btn-modal-about:active {
+        background-color: #bdbebd; /* Couleur de fond du bouton lorsque cliqué */
+      }
+      
+      .btn-modal-about:focus {
+        background-color: #bdbebd; /* Couleur de fond du bouton sélectionné */
+      }
+      
+      .btn-modal-about:focus:not(:active) {
+        background-color: #e2e2e2; /* Couleur de fond du bouton précédemment sélectionné */
+      }

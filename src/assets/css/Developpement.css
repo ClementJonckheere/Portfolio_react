@@ -8,3 +8,9 @@
 .developpement-image {
     width: 40px;
 }
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

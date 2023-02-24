@@ -2,16 +2,18 @@ import React from "react";
 import { useState } from "react";
 import GetDate from "../components/GetDate";
 
-export default function Header() {
+export default function Header( {backgroundColor, modalIcon, modalName} ) {
+  
     const[startMenuOpen, setstartMenuOpen] = useState(false);  
 
     function toggleStartMenu() {
       setstartMenuOpen(!startMenuOpen);
     }
+    
 
     return(
         <>  
-        <div className="app-container">
+        <div className="app-container" style={{ backgroundColor: backgroundColor }}>
             <header className="header-barre">
                 <nav className="nav-header">
                 <div className="menu-home">
@@ -69,6 +71,14 @@ export default function Header() {
                     </button>
                   </div>
                 </nav>
+                <div className="header-content">
+                     {modalIcon && (
+                    <div className="modal-header">
+                      <img src={modalIcon} alt="Modal Icon" />
+                      <h2>{modalName}</h2>
+                    </div>
+                      )}
+                  </div>
             <GetDate />
           </header>
       </div>

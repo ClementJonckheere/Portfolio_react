@@ -11,10 +11,7 @@ function InfoGen() {
                     </div>
                     <div className="sous-title-info-general">
                         <div className="dev">
-                            <h2>Web developpeur</h2>
-                        </div>
-                        <div className="ui-ux">
-                            <h2>Web design</h2>
+                            <h2>Etudient Web developpeur</h2>
                         </div>
                     </div>
             </section>

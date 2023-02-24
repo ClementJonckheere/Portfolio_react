@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CV from "./CV";
-import InfoGen from "./InfoGen";
-import Objectif from "./Objectif";
+import CV from "./AboutComponents/CV";
+import InfoGen from "./AboutComponents/InfoGen";
+import Objectif from "./AboutComponents/Objectif";
 
 function About() {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,11 +49,13 @@ function About() {
                     <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                   </div>
                   <div className="modal-content">
+                  <div className="info-bar">
                     <div className="router-modale-about">
-                    <button className="btn-modal-about" onClick={() => setSelectedOption("InfoGen")}>Info generale</button>
-                      <button className="btn-modal-about" onClick={() => setSelectedOption("Objectif")}>Mes objectifs</button>
-                      <button className="btn-modal-about" onClick={() => setSelectedOption("CV")}>Mon CV</button>
+                    <button className="btn-modal-about" onClick={() => setSelectedOption("InfoGen")}><u className="u">In</u>fo generale</button>
+                      <button className="btn-modal-about" onClick={() => setSelectedOption("Objectif")}><u className="u">M</u>es objectifs</button>
+                      <button className="btn-modal-about" onClick={() => setSelectedOption("CV")}><u className="u">M</u>on parcours</button>
                     </div>
+                  </div>
                       <div className="info-generale-about"> 
                         {selectedOption === "InfoGen" && <InfoGen />}
                         {selectedOption === "Objectif" && <Objectif />}

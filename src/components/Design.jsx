@@ -39,11 +39,36 @@ function Design() {
                     onMouseUp={handleMouseUp}>
                           <div className="windows-name">
                             <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
-                          Mes compétences
+                          Projets design
                           </div>
                             <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                         </div>
                         <div className="modal-content">
+                          <div className="cards-content">
+                              <div className="card-body">
+                                <div className="card-title">
+                                  <h3>Modelisation 3D d'une maison avec Blender :</h3>
+                                </div>
+                                <div className="card-content">
+                                  <p>Découverte du logicel de modelisation 3D Blender, réalisation d'une maison sur une ile, en utilisant des textures, utilisation de l'éclairage pour le rendu de la création. Le rendu est en png.</p>
+                                </div>
+                                <div className="card-picture">
+                                  <img className="card-image" src="maison-clement.png" alt="blender Maison" />
+                                </div>
+                              </div>
+
+                              <div className="card-body">
+                                <div className="card-title">
+                                  <h3>Modelisation 3D d'une maison avec Blender :</h3>
+                                </div>
+                                <div className="card-content">
+                                  <p>Découverte du logicel de modelisation 3D Blender, réalisation d'une maison sur une ile, en utilisant des textures, utilisation de l'éclairage pour le rendu de la création. Le rendu est en png.</p>
+                                </div>
+                                <div className="card-picture">
+                                  <img className="card-image" src="maison-clement.png" alt="blender Maison" />
+                                </div>
+                              </div>
+                          </div>
                         </div>
                     </div>
                     )}

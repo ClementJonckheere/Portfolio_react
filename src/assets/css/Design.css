@@ -8,3 +8,24 @@
 .design-image {
     width: 40px;
 }
+
+.cards-content {
+    margin: 0px 20px;
+}
+
+.card-body {
+    padding-top: 1.5rem;
+}
+    .card-content {
+        margin: 15px 0px;
+    }
+    .card-picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+    }
+        .card-image {
+            width: 75%;
+            height: 80%;
+        }

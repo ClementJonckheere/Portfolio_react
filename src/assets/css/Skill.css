@@ -1,48 +1,186 @@
+.skills-image {
+    width: 40px;
+}
+
 .p_skills {
     position: absolute;
     font-size: 14px;
     top: 65px;
-    white-space: nowrap;
     color: #fefefe;
-}
+} 
 
-.skills-image {
-    width: 40px;
-}
-    .title-competences {
-        height: 50px;
-    }
-    .domaines-block {
-        height: 70px;
-    }
-
-.container-competences {
-    display: flex;
-}
-    .competences-dev {
-        height: 40%;
-    }
-    .title-comptences-dev, .title-comptences-design {
-        height: 50px;
-    }
-
-.domaines-competences {
-    width: 55%;
-    margin-right: 20px;
-}
-
-.icons-block {
-    display: flex;
+.fakeScreen {
+    background-color: #151515;
+    box-sizing: border-box;
     width: 100%;
-}
-    .icon-element {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        padding-right: 15px;
+    height: 680px;
+    margin: 0 auto;
+  }
+  
+  .line1, .line2, .line3, .line4 {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  .cursor1, .cursor2 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .line1 {
+    color: #FCFCFC;
+    -webkit-animation: type .5s 1s steps(20, end) forwards;
+    -moz-animation: type .5s 1s steps(20, end) forwards;
+    -o-animation: type .5s 1s steps(20, end) forwards;
+    animation: type .5s 1s steps(20, end) forwards;
+  }
+  
+  .cursor1 {
+    -webkit-animation: blink 1s 2s 2 forwards;
+    -moz-animation: blink 1s 2s 2 forwards;
+    -o-animation: blink 1s 2s 2 forwards;
+    animation: blink 1s 2s 2 forwards;
+  }
+  
+  .line2 {
+    color: #00FF00;
+    -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+    -moz-animation: type .5s 4.25s steps(20, end) forwards;
+    -o-animation: type .5s 4.25s steps(20, end) forwards;
+    animation: type .5s 4.25s steps(20, end) forwards;
+  }
+  
+  .cursor2 {
+    -webkit-animation: blink 1s 5.25s 2 forwards;
+    -moz-animation: blink 1s 5.25s 2 forwards;
+    -o-animation: blink 1s 5.25s 2 forwards;
+    animation: blink 1s 5.25s 2 forwards;
+  }
+  
+  .line3 {
+    color: #FCFCFC;
+    -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+    -moz-animation: type .5s 7.5s steps(20, end) forwards;
+    -o-animation: type .5s 7.5s steps(20, end) forwards;
+    animation: type .5s 7.5s steps(20, end) forwards;
+  }
+  
+  .cursor3 {
+    -webkit-animation: blink 1s 8.5s 2 forwards;
+    -moz-animation: blink 1s 8.5s 2 forwards;
+    -o-animation: blink 1s 8.5s 2 forwards;
+    animation: blink 1s 8.5s 2 forwards;
+  }
+  
+  .line4 {
+    color: #00FF00;
+    -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+    -moz-animation: type .5s 10.75s steps(20, end) forwards;
+    -o-animation: type .5s 10.75s steps(20, end) forwards;
+    animation: type .5s 10.75s steps(20, end) forwards;
+  }
+  
+  .cursor4 {
+    -webkit-animation: blink 1s 11.5s infinite;
+    -moz-animation: blink 1s 8.5s infinite;
+    -o-animation: blink 1s 8.5s infinite;
+    animation: blink 1s 8.5s infinite;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
     }
-
-.icon-language {
-    width: 25px;
-}
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    to {
+      width: 40em;
+    }
+  }
+  
+  @-moz-keyframes type {
+    to {
+      width: 40em;
+    }
+  }
+  
+  @-o-keyframes type {
+    to {
+      width: 40em;
+    }
+  }
+  
+  @keyframes type {
+    to {
+      width: 40em;
+    }
+  }

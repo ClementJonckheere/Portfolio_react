@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function Competences() {
     const [isOpen, setIsOpen] = useState(false);
     const [modalX, setModalX] = useState(0);
@@ -7,7 +8,21 @@ function Competences() {
     const [isMouseDown, setIsMouseDown] = useState(false);
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
+    const [modalIcon, setModalIcon] = useState("");
+    const [modalName, setModalName] = useState("");
   
+    const handleModalOpen = () => {
+      setIsOpen(true);
+      setModalIcon("./competences.png");
+      setModalName("Compétences");
+    };
+
+    const handleModalClose = () => {
+      setIsOpen(false);
+      setModalIcon("");
+      setModalName("");
+    };
+
     const handleMouseDown = (event) => {
       setIsMouseDown(true);
       setMouseX(event.clientX);
@@ -29,7 +44,7 @@ function Competences() {
     return (
         <>
         <div className='container_icon'>
-            <div className='react-modal' style={{ top: 100 }} onDoubleClick={() => setIsOpen(true)} >
+        <div className='react-modal' style={{ top: 100 }} onDoubleClick={() => setIsOpen(true)} onDoubleClick={handleModalOpen}>
                 <img className="skills-image" src="./competences.png" alt="icon"/>
                 <p className="p_skills">Compétences</p>
             </div>
@@ -42,120 +57,37 @@ function Competences() {
                                 <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
                               Mes compétences
                               </div>
-                                <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
+                                <button className="close-button" onClick={() => setIsOpen(false)} onClick={handleModalClose}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                             </div>
                             <div className="modal-content">
                               <div className="container-competences">
-
-                                <section className="domaines-competences">
-                                  <div className="title-competences">
-                                    <h2>Domaines de competences :</h2>
-                                  </div>
-                                  <div className="container-domaines">
-                                    <div className="domaines-block">
-                                      <h3>Projets Web</h3>
-                                      <p>Site vitrine, e-commerce, application mobile</p>
-                                    </div>
-                                    <div className="domaines-block">
-                                      <h3>Conception graphique & Webdesign</h3>
-                                      <p>Maquettes Web, Logos, Design 3d</p>
-                                    </div>
-                                    <div className="domaines-block">
-                                      <h3>Interface d'administration</h3>
-                                      <p>PHP - MYSQL</p>
-                                    </div>
-                                    <div className="domaines-block">
-                                      <h3>CMS</h3>
-                                      <p>Wordpress, Prestashop</p>
-                                    </div>
-                                    <div className="domaines-block">
-                                      <h3>Integration de la maquette</h3>
-                                      <p>Utilisation HTML/CSS respectant les normes d'accessiblités
-                                      & ergonomie des pages web</p>
-                                    </div>
-                                    <div className="domaines-block">
-                                      <h3>Dynamistation des pages</h3>
-                                      <p>JavaScript, ReactJs, VueJs</p>
-                                    </div>
-                                  </div>
-                                </section>
-
-                                <section className="competences">
-                                  <div className="competences-dev">
-                                    <div className="title-comptences-dev">
-                                      <h2>Competences en developpement :</h2>
-                                    </div>
-                                    <div className="icon-dev">
-                                      <div className="icons-block">
-                                        <div className="icon-element">
-                                          HTML
-                                        <img className="icon-language" src="./icons-html.png" alt="icon html" />
-                                        </div>
-                                        <div className="icon-element">
-                                          CSS
-                                        <img className="icon-language" src="./icons-css.png" alt="icon css" />
-                                        </div>
-                                        <div className="icon-element">
-                                          JavaScript
-                                        <img className="icon-language" src="./icons-javascript.png" alt="icon javaScript" />
-                                        </div>
-                                      </div>
-                                      <div className="icons-block">
-                                        <div className="icon-element">
-                                            PHP
-                                          <img className="icon-language" src="./icons-php.png" alt="icon php" />
-                                        </div>
-                                        <div className="icon-element">
-                                            MYSQL
-                                          <img className="icon-language" src="./icons-mysql.png" alt="icon mysql" />
-                                        </div>
-                                        <div className="icon-element">
-                                            SYMFONY
-                                          <img className="icon-language" src="./icons-symfony.png" alt="icon symfony" />
-                                        </div>
-                                      </div>
-                                      <div className="icons-block">
-                                      <div className="icon-element">
-                                              REACTJS
-                                          <img className="icon-language" src="./icons-react.png" alt="icon reactjs" />
-                                        </div>
-                                        <div className="icon-element">
-                                              VUEJS
-                                          <img className="icon-language" src="./icons-vuejs.png" alt="icon vuejs" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="competences-design">
-                                    <div className="title-comptences-design">
-                                      <h2>Competences en design :</h2>
-                                    </div>
-                                      <div className="icons-block">
-                                          <div className="icon-element">
-                                                  AdobeXd
-                                              <img className="icon-language" src="./icons-adobe-xd.png" alt="icon adobeXd" />
-                                            </div>
-                                          <div className="icon-element">
-                                                  Photoshop
-                                            <img className="icon-language" src="./icons-adobe-photoshop.png" alt="icon photoshop" />
-                                            </div>
-                                          <div className="icon-element">
-                                                  Illustrator
-                                            <img className="icon-language" src="./icons-adobe-illustrator.png" alt="icon illustrator" />
-                                          </div>
-                                        </div>
-                                        <div className="icons-block">
-                                        <div className="icon-element">
-                                                  Blender
-                                            <img className="icon-language" src="./icons-blender.png" alt="icon blender" />
-                                          </div>
-                                          <div className="icon-element">
-                                                  Indesign
-                                            <img className="icon-language" src="./icons-adobe-indesign.png" alt="icon html" />
-                                          </div>
-                                        </div>
-                                  </div>
-                                </section>
+                                <div className="fakeScreen">
+                                  <div className="line1">C:\Users\clement\Desktop\competences>$ competence_dev<span class="cursor1">_</span></div>
+                                  <div className="line2">
+                                    <ul>
+                                      <li>-HTML</li>
+                                      <li>-CSS</li>
+                                      <li>-JavaScript</li>
+                                      <li>-ReactJs</li>
+                                      <li>-Vuejs</li>
+                                      <li>-PHP</li>
+                                      <li>-Synfony</li>
+                                      <li>-Wordpress</li>
+                                      <li>-Python</li>
+                                      <li>-Java</li>
+                                      </ul>
+                                      <span className="cursor2">_</span></div>
+                                  <div className="line3">C:\Users\clement\Desktop\competences>$ competence_design<span class="cursor3">_</span></div>
+                                  <div className="line4">
+                                  <ul>
+                                      <li>-AdobeXd</li>
+                                      <li>-Photoshop</li>
+                                      <li>-Illustrator</li>
+                                      <li>-Indesign</li>
+                                      <li>-Blender</li>
+                                      </ul>
+                                    <span className="cursor4">_</span></div>
+                              </div>
                               </div>
                             </div>
                         </div>
