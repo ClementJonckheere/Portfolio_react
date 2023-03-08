@@ -18,7 +18,7 @@ import "./assets/css/AboutSections/Objectifs.css";
 const router= createBrowserRouter(
   [
     {
-      path:"/",
+      path:"./",
       element: <Windows />
     }
   ]
