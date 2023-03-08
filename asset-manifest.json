@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio_react/static/css/main.875ba7ed.css",
-    "main.js": "/Portfolio_react/static/js/main.299a3c1d.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js",
-    "static/media/windows-95-cloud-background.png": "/Portfolio_react/static/media/windows-95-cloud-background.8e0ffc852c00c660be55.png",
-    "static/media/Windows Regular.ttf": "/Portfolio_react/static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
-    "index.html": "/Portfolio_react/index.html",
-    "main.875ba7ed.css.map": "/Portfolio_react/static/css/main.875ba7ed.css.map",
-    "main.299a3c1d.js.map": "/Portfolio_react/static/js/main.299a3c1d.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "./static/css/main.38e3145b.css",
+    "main.js": "./static/js/main.12520b31.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/windows-95-cloud-background.png": "./static/media/windows-95-cloud-background.8e0ffc852c00c660be55.png",
+    "static/media/Windows Regular.ttf": "./static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
+    "index.html": "./index.html",
+    "main.38e3145b.css.map": "./static/css/main.38e3145b.css.map",
+    "main.12520b31.js.map": "./static/js/main.12520b31.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.875ba7ed.css",
-    "static/js/main.299a3c1d.js"
+    "static/css/main.38e3145b.css",
+    "static/js/main.12520b31.js"
   ]
 }
