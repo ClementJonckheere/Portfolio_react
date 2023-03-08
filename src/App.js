@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+// import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Windows from "./pages/Windows";
 import "./assets/css/Header.css";
 import "./assets/css/Windows.css";
@@ -15,14 +15,14 @@ import "./assets/css/AboutSections/CV.css";
 import "./assets/css/Background.css";
 import "./assets/css/AboutSections/Objectifs.css";
 
-const router= createBrowserRouter(
-  [
-    {
-      path:"./",
-      element: <Windows />
-    }
-  ]
-)
+// const router= createBrowserRouter(
+//   [
+//     {
+//       path:"./",
+//       element: <Windows />
+//     }
+//   ]
+// )
 
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
           </div> 
         </div>
         :
-        <RouterProvider router={router} />
+        <Windows />
       }
     </div>
   );
