@@ -3,7 +3,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Windows from "./pages/Windows";
 import "./assets/css/Header.css";
 import "./assets/css/Windows.css";
-import"./assets/css/reset.css";
+import "./assets/css/reset.css";
 import "./assets/css/Game.css";
 import "./assets/css/About.css";
 import "./assets/css/Design.css";
