@@ -29,3 +29,19 @@
             width: 75%;
             height: 80%;
         }
+        .card-logo {
+            width: 200px;
+        }
+        .card-illustr {
+            width: 200px;
+            transform: rotate(30deg);
+        }
+
+.card-container {
+    display: flex;
+}
+
+.card-picture-logo {
+    display: flex;
+    justify-content: space-around;
+}

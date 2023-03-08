@@ -31,7 +31,7 @@
     align-items: center;
     color: #010101;
     font-family: 'windowsregular';
-    font-size: 16px;
+    font-size: 14px;
     width: 85px;
     margin-left: 5px;
     box-shadow: 1.5px 1.5px #000;
@@ -42,6 +42,7 @@
     background: silver;
     font-weight: bold;
 }
+
 .icon-home {
     height: 15px;
     margin-left: 8px;
@@ -164,4 +165,28 @@
     height: 1px;
     background: #000;
     border-bottom: 1px solid #fefefe;
+}
+
+
+.liens-icons {
+    display: flex;
+    align-items: center;
+    color: #010101;
+    font-size: 14px;
+    font-family: 'windowsregular';
+    width: 175px;
+    margin-left: 5px;
+    box-shadow: 1.5px 1.5px #000;
+    border-top: 1.5px solid #fafafa;
+    border-left: 1.5px solid #fafafa;
+    border-bottom: 1.5px solid #5a5a5a;
+    border-right: 1.5px solid #5a5a5a;
+    background: silver;
+    font-weight: bold;
+}
+
+.icon-navigation {
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 5px;
 }

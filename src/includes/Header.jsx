@@ -2,9 +2,11 @@ import React from "react";
 import { useState } from "react";
 import GetDate from "../components/GetDate";
 
-export default function Header( {backgroundColor, modalIcon, modalName} ) {
-  
-    const[startMenuOpen, setstartMenuOpen] = useState(false);  
+export default function Header( {backgroundColor, btnIsOpen, modalInfo, category} ) {
+    console.log(category);
+    const[startMenuOpen, setstartMenuOpen] = useState(false); 
+    const btnInfo = modalInfo[category];
+
 
     function toggleStartMenu() {
       setstartMenuOpen(!startMenuOpen);
@@ -66,19 +68,16 @@ export default function Header( {backgroundColor, modalIcon, modalName} ) {
                   </div>
                   <div className="navigations">
                     <button className="liens-navigation-home" id="home-navigation" onClick={toggleStartMenu}>
-                      <img src="./windows.png" alt="test" className="icon-home"></img>
+                      <img src="./windows.png" alt="barre de navigation" className="icon-home"></img>
                       Home
                     </button>
+                    {btnIsOpen ? (
+                      <button className="liens-icons">    
+                      <img src={btnInfo.icon} alt="icons" className="icon-navigation" ></img>  
+                      {btnInfo.name}</button>    
+                    ) : null}
                   </div>
                 </nav>
-                <div className="header-content">
-                     {modalIcon && (
-                    <div className="modal-header">
-                      <img src={modalIcon} alt="Modal Icon" />
-                      <h2>{modalName}</h2>
-                    </div>
-                      )}
-                  </div>
             <GetDate />
           </header>
       </div>

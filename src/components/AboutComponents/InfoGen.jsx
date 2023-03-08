@@ -4,7 +4,7 @@ function InfoGen() {
         <div className="main-info-generale">
             <section className="block-info-generale">
                     <div className="picture-info-general">
-                        <img className="profil-info-general" src="testimage.jpg" alt="profil Clément Jonckheere" />
+                        <img className="profil-info-general" src="clementjonckheere.png" alt="profil Clément Jonckheere" />
                     </div>
                     <div className="title-info-general">
                         <h1>Clément Jonckheere</h1>

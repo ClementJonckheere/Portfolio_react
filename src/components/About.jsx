@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CV from "./AboutComponents/CV";
 import InfoGen from "./AboutComponents/InfoGen";
 import Objectif from "./AboutComponents/Objectif";
 
-function About() {
+
+function About( {openBtn, closeBtn, updateCategory} ) {
     const [isOpen, setIsOpen] = useState(false);
     const [modalX, setModalX] = useState(0);
     const [modalY, setModalY] = useState(0);
@@ -11,6 +12,18 @@ function About() {
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
     const [selectedOption, setSelectedOption] = useState("InfoGen");
+    
+  
+    const handleModalOpen = () => {
+      setIsOpen(true);
+      openBtn();
+      updateCategory("about");
+    };
+  
+    const handleModalClose = () => {
+      setIsOpen(false);
+      closeBtn();
+    };
   
     const handleMouseDown = (event) => {
       setIsMouseDown(true);
@@ -30,11 +43,28 @@ function About() {
     const handleMouseUp = () => {
       setIsMouseDown(false);
     };
+  
+    const handleWindowResize = () => {
+      const modal = document.querySelector(".modal_game");
+      const modalWidth = modal.offsetWidth;
+      const modalHeight = modal.offsetHeight;
+      const left = (window.innerWidth - modalWidth) / 2;
+      const top = (window.innerHeight - modalHeight) / 2;
+      setModalX(left);
+      setModalY(top);
+    };
+  
+    useEffect(() => {
+      window.addEventListener("resize", handleWindowResize);
+      return () => {
+        window.removeEventListener("resize", handleWindowResize);
+      };
+    }, []);
     return (
         <>
         <div className='container_icon'>
-            <div className='react-modal' style={{ top: 0}} onDoubleClick={() => setIsOpen(true)} >
-                <img className="about-image" src="./about.png" alt="icon"/>
+            <div className='react-modal' style={{ top: 0}} onDoubleClick={handleModalOpen} >
+                <img className="about-image" src="./a_propos.png" alt="icon"/>
                 <p className="p_apropos">A propos</p>
             </div>
             {isOpen && (
@@ -43,10 +73,10 @@ function About() {
                   onMouseMove={handleMouseMove}
                   onMouseUp={handleMouseUp}>
                   <div className="windows-name">
-                    <img className="icon-modal-windows" src="./about.png" alt="icon page a propos de moi"></img>
+                    <img className="icon-modal-windows" src="./a_propos.png" alt="icon page a propos de moi"></img>
                       A propos
                     </div>
-                    <button className="close-button" onClick={() => setIsOpen(false)}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
+                    <button className="close-button" onClick={handleModalClose}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                   </div>
                   <div className="modal-content">
                   <div className="info-bar">

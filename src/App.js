@@ -13,6 +13,7 @@ import "./assets/css/Skill.css";
 import "./assets/css/AboutSections/InfoGen.css";
 import "./assets/css/AboutSections/CV.css";
 import "./assets/css/Background.css";
+import "./assets/css/AboutSections/Objectifs.css";
 
 const router= createBrowserRouter(
   [
@@ -26,12 +27,13 @@ const router= createBrowserRouter(
 
 function App() {
   const [loading, setLoading] = useState(false);
-useEffect(() => {
-  setLoading(true)
-  setTimeout(() => {
-    setLoading(false)
-  }, 3000)
-}, [])
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
   return (
     <div className="App">
       {
@@ -41,10 +43,11 @@ useEffect(() => {
             <img class="picture-windows" src="icon-windows-95.png" alt="icon windows 95"></img>
           </div>
           <div class="microsoft">
-            <h2 class="h2-microsoft">Microsoft 95</h2>
+            <h2 class="h2-microsoft">Microsoft</h2>
           </div>
           <div class="title-windows">
-            <h1>Bienvenue sur le portfolio de <strong class="name-title">Clément</strong></h1>
+            <h1>Windows <strong class="version-loading">95</strong></h1>
+            <strong class="name-title">Portfolio de Clément</strong>
           </div>
           <div class="barLoad">
             <div class="loadBar">

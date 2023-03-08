@@ -1,26 +1,24 @@
 import { useState } from "react";
 
 
-function Competences() {
+function Competences( {openBtn, closeBtn, updateCategory}) {
     const [isOpen, setIsOpen] = useState(false);
     const [modalX, setModalX] = useState(0);
     const [modalY, setModalY] = useState(0);
     const [isMouseDown, setIsMouseDown] = useState(false);
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
-    const [modalIcon, setModalIcon] = useState("");
-    const [modalName, setModalName] = useState("");
   
     const handleModalOpen = () => {
       setIsOpen(true);
-      setModalIcon("./competences.png");
-      setModalName("Compétences");
+      openBtn();
+      updateCategory("skills");
     };
+
 
     const handleModalClose = () => {
       setIsOpen(false);
-      setModalIcon("");
-      setModalName("");
+      closeBtn();
     };
 
     const handleMouseDown = (event) => {
@@ -44,8 +42,8 @@ function Competences() {
     return (
         <>
         <div className='container_icon'>
-        <div className='react-modal' style={{ top: 100 }} onDoubleClick={() => setIsOpen(true)} onDoubleClick={handleModalOpen}>
-                <img className="skills-image" src="./competences.png" alt="icon"/>
+        <div className='react-modal' style={{ top: 100 }} onDoubleClick={handleModalOpen}>
+                <img className="skills-image" src="./terminal_icon.png" alt="icon"/>
                 <p className="p_skills">Compétences</p>
             </div>
             {isOpen && (
@@ -54,10 +52,10 @@ function Competences() {
                         onMouseMove={handleMouseMove}
                         onMouseUp={handleMouseUp}>
                               <div className="windows-name">
-                                <img className="icon-modal-windows" src="./competences.png" alt="icon page des competences"></img>
+                                <img className="icon-modal-windows" src="./terminal_icon.png" alt="icon page des competences"></img>
                               Mes compétences
                               </div>
-                                <button className="close-button" onClick={() => setIsOpen(false)} onClick={handleModalClose}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
+                                <button className="close-button" onClick={handleModalClose}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                             </div>
                             <div className="modal-content">
                               <div className="container-competences">
