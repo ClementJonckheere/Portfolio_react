@@ -54,6 +54,7 @@ function Design({ openBtn, closeBtn, updateCategory }) {
                           </div>
                             <button className="close-button" onClick={handleModalClose}><img className="image_popup_header " src="./close.png" alt="icon close"/></button>
                         </div>
+                        
                         <div className="modal-content">
                           <div className="cards-content">
                               <div className="card-body">
