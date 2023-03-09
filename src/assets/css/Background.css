@@ -8,6 +8,11 @@
 .h2-current-color, .h2-choose-color {
     text-align: center;
     margin: 30px 0px;
+    background: #898989;
+    border-color: #fafafa #5a5a5a #5a5a5a #fafafa;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1px 1px #000;
 }
 
 .container-current-color {
