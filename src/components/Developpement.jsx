@@ -68,7 +68,7 @@ function Developpement({openBtn, closeBtn, updateCategory}) {
                                 </div>
                                 <div className="card-picture">
                                   <a className="card-link" href="https://github.com/ClementJonckheere/DealsGame-symphony.git" target="_blank" rel="noreferrer noopener">
-                                    <img className="card-image" src="DealGames.png" alt="site de troc jeux video avec Symfony" />
+                                    <img className="card-image" src="DealGames.PNG" alt="site de troc jeux video avec Symfony" />
                                   </a>
                                 </div>
                               </div>
@@ -83,10 +83,10 @@ function Developpement({openBtn, closeBtn, updateCategory}) {
 
                                 <div className="card-picture">
                                   <a className="card-link" href="https://github.com/ClementJonckheere/DJ-Agency-wp" target="_blank" rel="noreferrer noopener">
-                                    <img className="card-image" src="dj-agency.png" alt="Mon portfolio windows 95" />
+                                    <img className="card-image" src="dj-agency.PNG" alt="Mon portfolio windows 95" />
                                   </a>
                                   <a className="card-link" href="https://github.com/ClementJonckheere/DJ-Agency-wp" target="_blank" rel="noreferrer noopener">
-                                    <img className="card-image" src="dj-agency-2.png" alt="Mon portfolio windows 95" />
+                                    <img className="card-image" src="dj-agency-2.PNG" alt="Mon portfolio windows 95" />
                                   </a>
                                 </div>
                                 <a href="https://dj-agency.fr/agent-artistique/" target="_blank" rel="noreferrer noopener">Voir le site</a>
