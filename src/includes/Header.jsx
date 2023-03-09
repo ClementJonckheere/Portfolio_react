@@ -22,7 +22,7 @@ export default function Header( {backgroundColor, btnIsOpen, modalInfo, category
                     <div id="start-menu" className={`menu ${startMenuOpen ? "menu-open" : ""}`}>
                       <div class="menu-bar">
                         <div className="sidebar">
-                          <img src="/sidebar-image.png" className="sidebar-image" alt="sidebar"/>
+                          <img src="sidebar-image.png" className="sidebar-image" alt="sidebar"/>
                         </div>
                         <div className="socials">
                           <a className="a" href="https://github.com/ClementJonckheere" target="_blank" rel="noreferrer noopener">
