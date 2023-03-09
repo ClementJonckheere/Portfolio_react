@@ -17,8 +17,7 @@ function InfoGen() {
             </section>
             <section className="content-info-general">
                 <div className="about-me-info-general">
-                    <p className="paragraphe-about-me-info-general">Salut! Je m'appelle Clément Jonckheere et je suis un étudient web developpeur à l'école La Manu à Amiens. Je suis actuellement en 2 ème année, avec spécialité web developpeur. J'ai débuté ma formation en octobre 2021.
-                    J'ai travaillé avec un mélange de design, de front et de backend pour créer mes premiers sites web. Je suis extrement passionné de programmation depuis 2 ans et je me suis vue être interressé également par le design suite au début de ma formation. </p>
+                    <p className="paragraphe-about-me-info-general">Salut! Je m'appelle Clément Jonckheere et je suis un étudiant développeur web junior à l'école La Manu à Amiens. Je suis actuellement en 2 ème année, avec la spécialité web & application developper. J'ai débuté mon cursus en octobre 2021. J'ai acquis des compétences en design, front et backend pour créer mes premiers sites web. Je suis passionné par la programmation depuis 2 ans et je suis également intéressé par le design depuis que j'ai découvert la première année de Bachelor tous les fondamentaux de l'UX/UI Design. </p>
                 </div>
             </section>
         </div>
