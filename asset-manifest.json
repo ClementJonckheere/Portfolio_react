@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.83419cbc.css",
-    "main.js": "/static/js/main.f4c85e0e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/windows-95-cloud-background.png": "/static/media/windows-95-cloud-background.8e0ffc852c00c660be55.png",
-    "static/media/Windows Regular.ttf": "/static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
-    "index.html": "/index.html",
-    "main.83419cbc.css.map": "/static/css/main.83419cbc.css.map",
-    "main.f4c85e0e.js.map": "/static/js/main.f4c85e0e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/Portfolio_react/static/css/main.0466858f.css",
+    "main.js": "/Portfolio_react/static/js/main.707429c0.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js",
+    "static/media/windows-95-cloud-background.png": "/Portfolio_react/static/media/windows-95-cloud-background.8e0ffc852c00c660be55.png",
+    "static/media/Windows Regular.ttf": "/Portfolio_react/static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
+    "index.html": "/Portfolio_react/index.html",
+    "main.0466858f.css.map": "/Portfolio_react/static/css/main.0466858f.css.map",
+    "main.707429c0.js.map": "/Portfolio_react/static/js/main.707429c0.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83419cbc.css",
-    "static/js/main.f4c85e0e.js"
+    "static/css/main.0466858f.css",
+    "static/js/main.707429c0.js"
   ]
 }
