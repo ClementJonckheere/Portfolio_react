@@ -55,7 +55,7 @@ function Background( {openBtn, closeBtn, setBackgroundColor, updateCategory}) {
           <p className="p_skills">Settings</p>
         </div>
         {isOpen && (
-          <div className="modal_game" style={{ left: modalX, top: modalY }}>
+          <div className="modal_background" style={{ left: modalX, top: modalY }}>
             <div className="modal-header" onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
               onMouseUp={handleMouseUp}>
