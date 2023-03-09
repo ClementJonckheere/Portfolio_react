@@ -52,19 +52,10 @@ export default function Header( {backgroundColor, btnIsOpen, modalInfo, category
                             </div>
                           </div>
                           </a>
-                          <a className="a" href="Clément JONCKHEERE.pdf" target="_blank" rel="noreferrer noopener">
-                          <div className="bar">
-                            <img src="./cv.png" class="social-image" alt="gmail"/>
-                            <div className="social-text">
-                              <u className="u" >C</u>
-                              urriculum vitae
-                            </div>
-                          </div>
-                          </a>
                           <div className="hr"></div>
                           <a className="a" href="Clément JONCKHEERE.pdf" target="_blank" rel="noreferrer noopener">
                           <div className="bar">
-                            <img src="./cv.png" class="social-image" alt="gmail"/>
+                            <img src="./cv.png" class="social-image" alt="cv"/>
                             <div className="social-text">
                               <u className="u" >C</u>
                               urriculum vitae
