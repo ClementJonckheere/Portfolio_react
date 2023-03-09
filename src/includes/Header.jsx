@@ -43,7 +43,7 @@ export default function Header( {backgroundColor, btnIsOpen, modalInfo, category
                             </div>
                           </div>
                           </a>
-                          <a className="a" href="https://mail.google.com/mail/u/2/#inbox" target="_blank" rel="noreferrer noopener">
+                          <a className="a" href="mailto: clementjonckheere1999@gmail.com" target="_blank" rel="noreferrer noopener">
                           <div className="bar">
                             <img src="./gmail.png" class="social-image" alt="gmail"/>
                             <div className="social-text">
