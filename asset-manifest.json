@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio_react/static/css/main.9650519c.css",
-    "main.js": "/Portfolio_react/static/js/main.68876272.js",
+    "main.js": "/Portfolio_react/static/js/main.a5cdde0e.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js",
     "static/media/windows-95-cloud-background.png": "/Portfolio_react/static/media/windows-95-cloud-background.8e0ffc852c00c660be55.png",
     "static/media/Windows Regular.ttf": "/Portfolio_react/static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
     "index.html": "/Portfolio_react/index.html",
     "main.9650519c.css.map": "/Portfolio_react/static/css/main.9650519c.css.map",
-    "main.68876272.js.map": "/Portfolio_react/static/js/main.68876272.js.map",
+    "main.a5cdde0e.js.map": "/Portfolio_react/static/js/main.a5cdde0e.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio_react/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9650519c.css",
-    "static/js/main.68876272.js"
+    "static/js/main.a5cdde0e.js"
   ]
 }
